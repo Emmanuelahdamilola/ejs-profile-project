@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title><%= profile.name %> • Profile</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <main class="profile-page">
+    <div class="profile-card">
+      <div class="profile-header">
+        <img src="/images/<%= profile.image %>" alt="<%= profile.name %>" />
+        <h1><%= profile.name %></h1>
+        <p class="bio"><%= profile.bio %></p>
+        <div class="social-links">
+          <% if (profile.social) { %>
+            <% if (profile.social.twitter) { %>
+              <a href="https://twitter.com/<%= profile.social.twitter %>" target="_blank">Twitter</a>
+            <% } %>
+            <% if (profile.social.github) { %>
+              <a href="https://github.com/<%= profile.social.github %>" target="_blank">GitHub</a>
+            <% } %>
+            <% if (profile.social.website) { %>
+              <a href="<%= profile.social.website %>" target="_blank">Website</a>
+            <% } %>
+          <% } %>
+        </div>
+      </div>
+
+      <div class="profile-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+          <% profile.posts.forEach(post => { %>
+            <li><%= post %></li>
+          <% }) %>
+        </ul>
+      </div>
+
+      <div class="back-link">
+        <a href="/">← Back to Home</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

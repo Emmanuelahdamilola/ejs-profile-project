@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profiles • Home</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Our Community</h1>
+    <p>Meet the members and see what they’ve been up to.</p>
+  </header>
+
+  <main>
+    <div class="cards-container">
+      <% profiles.forEach(profile => { %>
+        <a class="card" href="/profile/<%= profile.id %>">
+          <div class="card-img-wrapper">
+            <img src="/images/<%= profile.image %>" alt="<%= profile.name %>" />
+          </div>
+          <div class="card-content">
+            <h2><%= profile.name %></h2>
+            <p><%= profile.bio %></p>
+          </div>
+        </a>
+      <% }) %>
+    </div>
+  </main>
+</body>
+</html>

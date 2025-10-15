@@ -1,0 +1,247 @@
+/* ===== Import Font ===== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background: #f5f7fa;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Fade in whole page */
+body, main, header {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+header h1 {
+  font-size: 2.8rem;
+  color: #2c3e50;
+  margin-bottom: 0.5em;
+}
+header p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+}
+
+/* Cards container on homepage */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  text-decoration: none;
+  color: inherit;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: cardFadeIn 0.6s forwards;
+}
+.card:nth-child(1) { animation-delay: 0.2s; }
+.card:nth-child(2) { animation-delay: 0.3s; }
+.card:nth-child(3) { animation-delay: 0.4s; }
+/* add more delays if more cards */
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.1);
+}
+
+.card-img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.card-img-wrapper img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.card:hover .card-img-wrapper img {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 1.5rem;
+  flex: 1;
+}
+.card-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+  color: #2c3e50;
+}
+.card-content p {
+  color: #606c76;
+  font-size: 1rem;
+}
+
+/* Profile page styling */
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 3rem 1rem;
+}
+.profile-card {
+  background: #ffffff;
+  border-radius: 24px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 14px 40px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transform: translateY(30px);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.profile-header {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+.profile-header img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #3498db;
+  margin-bottom: 1rem;
+}
+.profile-header h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+.profile-header .bio {
+  font-style: italic;
+  color: #7f8c8d;
+  margin: 0.5rem 0 1rem;
+}
+.social-links a {
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.social-links a:hover {
+  color: #2980b9;
+}
+
+.profile-posts {
+  padding: 0 1.5rem 1.5rem;
+}
+.profile-posts h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+.profile-posts ul {
+  list-style: none;
+  padding: 0;
+}
+.profile-posts li {
+  background: #f0f4f8;
+  margin-bottom: 0.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: 10px;
+  transition: background 0.3s;
+}
+.profile-posts li:hover {
+  background: #e1e9f3;
+}
+
+.back-link {
+  text-align: center;
+  margin: 1.5rem 0 2rem;
+}
+.back-link a {
+  color: #ffffff;
+  background: #3498db;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+.back-link a:hover {
+  background: #2980b9;
+}
+
+/* 404 styles */
+
+.notfound-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  padding: 1rem;
+}
+.notfound-box {
+  background: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  animation: fadeInUp 0.8s ease-out both;
+}
+.notfound-box h1 {
+  font-size: 3rem;
+  color: #e74c3c;
+  margin-bottom: 0.5em;
+}
+.notfound-box p {
+  margin-bottom: 1.5em;
+  color: #7f8c8d;
+}
+.notfound-box a {
+  text-decoration: none;
+  color: #ffffff;
+  background: #3498db;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+.notfound-box a:hover {
+  background: #2980b9;
+}
+
+/* ===== Animations ===== */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardFadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

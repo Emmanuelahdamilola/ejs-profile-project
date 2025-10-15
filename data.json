@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Smith",
+    "bio": "Front-end developer. Coffee lover. Avid traveler.",
+    "image": "user1.jpg",
+    "posts": [
+      "Just launched my new portfolio site.",
+      "Learning GSAP animations today!",
+      "Visited Morocco last month — unforgettable."
+    ],
+    "social": {
+      "twitter": "alice_smith",
+      "github": "alice-smith",
+      "website": "https://alice.dev"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Bob Johnson",
+    "bio": "Back-end engineer & API specialist.",
+    "image": "user2.jpg",
+    "posts": [
+      "Working on GraphQL APIs.",
+      "Dockerizing my entire dev environment.",
+      "Started reading a new book on distributed systems."
+    ],
+    "social": {
+      "twitter": "bobjohnson",
+      "github": "bob-j",
+      "website": "https://bob.codes"
+    }
+  }
+]
