@@ -2,12 +2,12 @@
   {
     "id": 1,
     "name": "Oluwafemi Bankole",
-    "bio": "Back-end developer. Coffee lover. Avid traveler.",
-    "image": "./public/bankole.jpg",
+    "bio": "Backend developer specializing in Node.js, databases, and API design.",
+    "image": "banky.jpg",
     "posts": [
-      "Just launched my new portfolio site.",
-      "Learning GSAP animations today!",
-      "Visited Morocco last month — unforgettable."
+      "Designed and implemented RESTful APIs for multiple projects.",
+      "Optimizing database queries for faster performance.",
+      "Exploring microservices architecture for scalable systems."
     ],
     "social": {
       "twitter": "b4kole",
@@ -17,18 +17,146 @@
   },
   {
     "id": 2,
-    "name": "Bob Johnson",
-    "bio": "Back-end engineer & API specialist.",
-    "image": "user2.jpg",
+    "name": "Blessing Ezieh",
+    "bio": "Backend engineer specializing in Node.js and scalable APIs.",
+    "image": "blessing.jpg",
     "posts": [
-      "Working on GraphQL APIs.",
-      "Dockerizing my entire dev environment.",
-      "Started reading a new book on distributed systems."
+      "Built a REST API for an e-commerce app.",
+      "Learning GraphQL for flexible data fetching.",
+      "Optimizing database queries for performance."
     ],
     "social": {
-      "twitter": "bobjohnson",
-      "github": "bob-j",
-      "website": "https://bob.codes"
+      "twitter": "blessing_ezieh",
+      "github": "blessing-e",
+      "website": "https://blessing.dev"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Bello Emmanuelah",
+    "bio": "Backend developer passionate about server-side architecture.",
+    "image": "bello.png",
+    "posts": [
+      "Implemented JWT authentication for a web app.",
+      "Exploring microservices and API gateways.",
+      "Working on caching strategies using Redis."
+    ],
+    "social": {
+      "twitter": "emmanuelah_damilola",
+      "github": "Emmanuelahdamilola",
+      "website": "https://codentia.dev"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Olowoyo Emmanuel Segun",
+    "bio": "Server-side engineer and database enthusiast.",
+    "image": "olowoyo.jpg",
+    "posts": [
+      "Designed a PostgreSQL schema for a social app.",
+      "Implemented background jobs with Node.js and Bull.",
+      "Exploring REST vs GraphQL trade-offs."
+    ],
+    "social": {
+      "twitter": "olowoyo_es",
+      "github": "olowoyo-segun",
+      "website": "https://olowoyo.dev"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Isreal Ogbor",
+    "bio": "Backend developer with a focus on Node.js and APIs.",
+    "image": "isreal.jpg",
+    "posts": [
+      "Built a Flask API for a machine learning project.",
+      "Exploring async programming with FastAPI.",
+      "Working on automated data pipelines."
+    ],
+    "social": {
+      "twitter": "isreal_ogbor",
+      "github": "isreal-ogbor",
+      "website": "https://isreal.dev"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Esther Royalty",
+    "bio": "Backend engineer building secure and maintainable systems.",
+    "image": "esther.jpg",
+    "posts": [
+      "Implemented role-based access control in Node.js.",
+      "Learning about OAuth2 and JWT security.",
+      "Working with cloud functions for serverless apps."
+    ],
+    "social": {
+      "twitter": "esther_royalty",
+      "github": "esther-royalty",
+      "website": "https://esther.dev"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Oluwakemi Adeosun",
+    "bio": "Backend developer focused on API design and databases.",
+    "image": "oluwakemi.jpg",
+    "posts": [
+      "Refactoring APIs for better scalability.",
+      "Implementing caching with Redis for faster responses.",
+      "Building relational and NoSQL databases."
+    ],
+    "social": {
+      "twitter": "oluwakemi_a",
+      "github": "oluwakemi-adeosun",
+      "website": "https://oluwakemi.dev"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Samuel Ololade",
+    "bio": "Backend engineer passionate about cloud and DevOps.",
+    "image": "samuel.jpg",
+    "posts": [
+      "Deploying Node.js apps with Docker and Kubernetes.",
+      "Setting up CI/CD pipelines with GitHub Actions.",
+      "Monitoring backend performance using Prometheus."
+    ],
+    "social": {
+      "twitter": "samuel_ololade",
+      "github": "samuel-ololade",
+      "website": "https://samuel.dev"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Alabi Stephen",
+    "bio": "Backend developer focused on automation and system design.",
+    "image": "alabi.jpg",
+    "posts": [
+      "Building automated scripts for server maintenance.",
+      "Exploring event-driven architecture.",
+      "Implementing background jobs with Node.js."
+    ],
+    "social": {
+      "twitter": "alabi_stephen",
+      "github": "alabi-stephen",
+      "website": "https://alabi.dev"
+    }
+  },
+  {
+    "id": 10,
+    "name": "David Bassey",
+    "bio": "Backend developer specializing in scalable APIs and server-side architecture.",
+    "image": "david.jpg",
+    "posts": [
+      "Built a microservices-based backend for a social platform.",
+      "Optimizing database queries for high-traffic applications.",
+      "Implementing secure authentication with JWT and OAuth2."
+    ],
+    "social": {
+      "twitter": "david_bassey",
+      "github": "david-bassey",
+      "website": "https://david.dev"
     }
   }
 ]
